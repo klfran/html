@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>O(∩_∩)O哈哈哈~</title>
+    <style>
+        #a{
+            width:500px;
+            height:200px;
+            position:absolute;
+            left:500px;
+            top:200px;
+            padding-top:100px;
+            background-color: pink;
+            border:solid 1px black;
+            text-align: center;
+        }
+        #no{
+            position:absolute;
+            left:100px;
+            top:100px;
+        } 
+        
+    </style>
+
+</head>
+<body>
+    <div id="a" style="color:red">
+    <span>Do you want to marry with me?</span>
+    <br>
+    <button onclick="b()">yes</button>
+    <br>
+    <button onmouseover="a()" id="no">no</button>
+    </div>
+    <script>
+        function a(){
+            var no=document.getElementById("no");
+            no.style.left=Math.floor(Math.random()*450)+"px";
+            no.style.top=Math.floor(Math.random()*280)+"px";
+        }
+        function b(){
+            alert("得到你了！哈哈")
+        }
+    </script>
+    
+</body>
+</html>
